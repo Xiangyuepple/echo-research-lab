@@ -1,0 +1,23 @@
+{
+  "name": "echo-after-hours",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite app --host 127.0.0.1 --port 8767",
+    "build": "vite build app --config vite.config.js --outDir ../dist --emptyOutDir",
+    "publish:static": "npm run build && node scripts/copy-build.mjs"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "@react-three/drei": "^10.7.0",
+    "@react-three/fiber": "^9.4.0",
+    "gsap": "^3.14.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "three": "^0.183.0"
+  },
+  "devDependencies": {
+    "vite": "^7.3.0"
+  }
+}
